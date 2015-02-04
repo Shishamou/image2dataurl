@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image to DataURL</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="block">
+				<h1>Image to DataURL</h1>
+		</header>
+
+		<div class="content">
+			<div class="block">
+
+				<h2>Input</h2>
+
+				<div class="row">
+					<input type="file" id="inputFile">
+					<input type="text" class="input" id="inputText" value="No file chosen." readonly>
+					<label for="inputFile" class="button">Browse..</label>
+					<input type="button" class="button" id="inputSubmit" value="OK">
+					<input type="hidden" id="inputImageUrl">
+				</div>
+
+				<div class="row">
+					<ul>
+						<li>
+							<input type="radio" name="type" value="png" id="radio1" checked>
+							<label for="radio1">png</label>
+						</li>
+						<li>
+							<input type="radio" name="type" value="jpeg" id="radio2">
+							<label for="radio2">jpeg</label>
+							<span> / <input type="number" id="inputQuality" value="100" min="0" max="100"> %</span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="imageWrapper" id="inputImageWrapper"></div>
+			</div>
+
+			<hr>
+
+			<div class="block">
+				<h2>Output</h2>
+				<textarea id="outputText"></textarea>
+
+				<div class="row">
+					<input type="button" class="button" id="outputButton1" value="Select All">
+					<input type="button" class="button" id="outputButton2" value="Goto">
+					<input type="button" class="button" id="outputButton3" value="Clear">
+				</div>
+
+				<div class="imageWrapper" id="outputImageWrapper"></div>
+			</div>
+		</div>
+
+		<footer>
+			<p>By Shisha (2015/2/4)</p>
+		</footer>
+
+	</div>
+
+</body>
+</html>
