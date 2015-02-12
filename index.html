@@ -29,7 +29,7 @@
 				</div>
 
 				<div class="row">
-					<ul>
+					<ul class="list">
 						<li>
 							<input type="radio" name="type" value="png" id="radio1" checked>
 							<label for="radio1">png</label>
@@ -37,19 +37,19 @@
 						<li>
 							<input type="radio" name="type" value="jpeg" id="radio2">
 							<label for="radio2">jpeg</label>
-							<span> / <input type="number" id="inputQuality" value="100" min="0" max="100"> %</span>
+							<span> / <input type="number" class="input" id="inputQuality" value="100" min="0" max="100"> %</span>
 						</li>
 					</ul>
 				</div>
 				
-				<div class="imageWrapper" id="inputImageWrapper"></div>
+				<div class="image-wrapper" id="inputImageWrapper"></div>
 			</div>
 
 			<hr>
 
 			<div class="block">
 				<h2>Output</h2>
-				<textarea id="outputText"></textarea>
+				<textarea class="input" id="outputText"></textarea>
 
 				<div class="row">
 					<input type="button" class="button" id="outputButton1" value="Select All">
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 
-		<footer>
+		<footer id="footer">
 			<p>By Shisha (2015/2/4)</p>
 		</footer>
 

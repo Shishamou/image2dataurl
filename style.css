@@ -1,5 +1,5 @@
 /* reset */
-body, ul, li, h1, h2, h3, h4, h5, h6, p {
+body, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
 	margin:0;
 	padding:0;
 	font-weight:normal;
@@ -10,41 +10,12 @@ li{
 }
 /* reset */
 
+body {
+	font-family: 'Calibri';
+}
+
 h1, h2, h3 {
 	margin: 12px 0;
-	font-family: 'Calibri';
-}
-
-
-li {
-	margin: 12px 6px;
-	font-family: 'Calibri';
-}
-
-input[type=file] {
-	display: none;
-}
-
-
-textarea {
-	box-sizing: border-box;
-	width: 800px;
-	height: 120px;
-	padding: 10px 15px;
-	border-radius: 5px;
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-	color: #666;
-	font-size: 16px;
-}
-
-textarea:focus {
-	outline: none;
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 6px rgb(94, 158, 214);
-}
-
-footer {
-	font-family: 'Calibri';
-	margin: 40px 20px 10px;
 }
 
 .block {
@@ -56,63 +27,102 @@ footer {
 }
 
 /* input */
-.input, .button {
+.input,
+.button
+{
 	box-sizing: border-box;
 	display: inline-block;
 	height: 32px;
 	padding: 6px 12px;
-	background-color: #fefefe;
-	border: 1px solid #ccc;
 	border-radius: 5px;
-	color: #666;
-	vertical-align: middle;
 	font-family: 'Calibri';
 	font-size: 16px;
-	line-height: 16px;
+	vertical-align: middle;
+	line-height: 1;
 }
 
-
-.input:hover, .button:hover {
-	border: 1px solid #aaa;
-	color: #333;
+.input:focus,
+.button:focus
+{
+	outline: none;
 }
 
 .input {
+	background-color: #fefefe;
+	border: 1px solid #d9d9d9;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	color: #666;
+}
+
+.input:hover
+{
+	border: 1px solid #4d90fe;
 }
 
 .input:focus {
 	outline: none;
+	border: 1px solid #4d90fe;
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 6px rgb(94, 158, 214);
 }
 
-.button:hover {
-	background-color: #eee;
+.button {
 	cursor: pointer;
+	background-color: #4d90fe;
+	border: 1px solid #3079ed;
+	color: #fff;
+}
+
+.button:hover {
+	background-color: #4787ed;
 }
 
 .button:focus {
-	outline: none;
+
+}
+
+textarea.input {
+	overflow: hidden;
+	width: 600px;
+	height: 120px;
+	padding: 10px 12px;
 }
 /* input */
 
-.imageWrapper {
+.list li {
+	height: 32px;
+	margin: 0 12px;
+}
+
+.image-wrapper {
 	margin: 16px 0;
 }
 
-.imageWrapper > img {
+.image-wrapper > img {
 	margin: 0;
 	border: 16px solid #f9f9f9;
 	box-shadow: 0 0 1px #000;
 }
 
-.imageWrapper > img {
+.image-wrapper > img {
 	width: 100%;
 	max-width: 400px;
 	height: 100%;
 	max-height: 400px;
 }
 
+#inputFile {
+	display: none;
+}
+
 #inputText {
+	width: 180px;
 	color: #999;
+}
+
+#inputQuality {
+	width: 80px;
+}
+
+#footer {
+	margin: 40px 20px 10px;
 }
